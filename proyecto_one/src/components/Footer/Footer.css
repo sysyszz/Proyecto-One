@@ -1,0 +1,47 @@
+/* Footer.css */
+
+.footer {
+    width: 100%;
+    padding: 4rem 0;
+    margin-top: 100px;
+    background: #05050a; /* Fondo ultra oscuro coherente con el Header */
+    border-top: 1px solid rgba(0, 255, 242, 0.2); /* Línea neón sutil */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estilo para los links de redes sociales */
+.footer a {
+    color: #b0b0c0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00fff2; /* Cian de React */
+    text-shadow: 0 0 10px #00fff2;
+    transform: translateY(-2px);
+}
+
+/* Estilo para el copyright */
+.footer h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 10px 0 0 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2.5rem 1rem;
+    }
+}

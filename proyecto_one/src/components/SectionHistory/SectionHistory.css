@@ -1,0 +1,61 @@
+.historia {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 3rem;
+    position: relative;
+    background: #0d0d1a;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.historia::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent, #ffaa00, transparent, #ff4400, transparent);
+    animation: rotate-border 6s linear infinite;
+    z-index: -2;
+}
+
+.historia::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #0d0d1a;
+    border-radius: 17px;
+    z-index: -1;
+}
+
+.historia h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffaa00;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: 6px;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 15px rgba(255, 170, 0, 0.6);
+}
+
+.historia p {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    line-height: 1.8;
+    font-size: 1.15rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@keyframes rotate-border {
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 950px) {
+    .historia { max-width: 92%; padding: 2rem 1.5rem; }
+    .historia h3 { font-size: 1.7rem; }
+}

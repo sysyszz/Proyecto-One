@@ -1,0 +1,19 @@
+
+
+/* Unifica el fondo de toda la aplicación */
+body, html {
+    background-color: #05050a; /* Fondo ultra oscuro */
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Contenedor opcional para separar las secciones */
+.App {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio uniforme entre secciones */
+    padding-bottom: 50px;
+}
